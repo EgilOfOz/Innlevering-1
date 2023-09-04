@@ -1,16 +1,9 @@
-# Initialiserer en variabel for å holde summen av tallene
-total_sum = 0
+n1 = int(input("skriv et tall"))
+n2 = int(input("skriv et tall"))
+n3 = int(input("skriv et tall"))
+n4 = int(input("skriv et tall"))
+n5 = int(input("skriv et tall"))
 
-# Ber brukeren om å skrive inn fem tall og legger dem til total_sum
-for i in range(5):
-    try:
-        num = float(input(f"Skriv inn tall {i+1}: "))
-        total_sum += num
-    except ValueError:
-        print("Ugyldig inndata. Vennligst skriv inn et gyldig tall.")
+gj = (n1 + n2 + n3 + n4 + n5)/5
 
-# Beregner gjennomsnittet
-average = total_sum / 5
-
-# Skriver ut gjennomsnittet
-print(f"Gjennomsnittet av tallene er: {average}")
+print("gjennomsnittet er", gj)
